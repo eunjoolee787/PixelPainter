@@ -30,19 +30,38 @@ $(document).ready(function(){
   var grid = $("<div>");
   grid.addClass("grid");
 
-
-for(var i = 0; i < 11; i++){
+  // artboard grid
+  for(var i = 0; i < 11; i++){
     var row = $("<div>");
     row.addClass("row");
-  for(var j = 0; j < 11; j++){
-    var square = $("<div>");
-    square.addClass("square");
-  row.append(square);
+    for(var j = 0; j < 11; j++){
+      var square = $("<div>");
+      square.addClass("square");
+      row.append(square);
+    }//end of j
+    grid.append(row);
   }//end of i
-  grid.append(row);
-}//end of j
 
-  $("body").append(grid);
+  $("#artboard").append(grid);
+
+  //controls grid
+  var rainbow = $("<div>");
+  rainbow.addClass("rainbow");
+
+  for(var k = 0; k < 4; k++) {
+    var row = $("<div>");
+    row.addClass("row");
+    for(var l = 0; l < 4; l++) {
+      var block = $("<div>");
+      block.addClass("block");
+      row.append(block);
+    }//end of l
+    rainbow.append(row);
+  }//end of k
+
+  $("#controls").append(rainbow);
+
+
 // var pixelPainter = PixelPainter(20,20);
 // $("#controls").append(pixelPainter.controls);
 // $("#artboard").append(pixelPainter.artboard);

@@ -38,6 +38,18 @@
   background-color: #000000;
 }
 
+div#controls{
+  display: inline-block;
+  background-color: red;
+  height: 325px;
+  width: 125px;
+}
+
+div#artboard {
+  display: inline-block;
+  background-color: blue;
+}
+/*artboard grid*/
 div.grid{
   width: 500px;
   /*height: 5px;*/
@@ -66,7 +78,28 @@ div.square{
   margin: 0;
 }
 
+/*controls grid*/
+div.rainbow{
+  /*background-color: red;*/
+  width: 100px;
+  display: inline-block;
+  padding: 25px;
+  /*height: 300px;*/
+}
 
+div.row{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
 
+div.block{
+  /*background-color: blue;*/
+  height: 35px;
+  width: 35px;
+  border: 1px solid black;
+  display: inline-block;
+  margin: 0;
+}
 
 
