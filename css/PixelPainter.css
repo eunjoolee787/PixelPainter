@@ -1,0 +1,72 @@
+.red {
+  background-color: #ff3300;
+}
+
+.green {
+  background-color: #33cc33;
+}
+
+.blue {
+  background-color: #0066cc;
+}
+
+.purple {
+  background-color: #6600cc;
+}
+
+.pink {
+  background-color: #ff99ff;
+}
+
+.yellow {
+  background-color: #ffff66;
+}
+
+.orange {
+  background-color: #ff9900;
+}
+
+.brown {
+  background-color: #996633;
+}
+
+.gray {
+  background-color: #999999;
+}
+
+.black {
+  background-color: #000000;
+}
+
+div.grid{
+  width: 500px;
+  /*height: 5px;*/
+  /*background-color: red;*/
+  /*border: 2px solid red;*/
+  display: inline-block;
+  padding: 0;
+}
+
+div.row{
+/*  width: 25px;
+  height: 25px;*/
+  /*background-color: pink;*/
+  /*border: 2px solid orange;*/
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+div.square{
+  width: 35px;
+  height: 35px;
+  /*background-color: blue;*/
+  border: 1px solid black;
+  display: inline-block;
+  margin: 0;
+}
+
+
+
+
+
