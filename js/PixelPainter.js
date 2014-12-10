@@ -66,6 +66,9 @@ $(document).ready(function(){
   clear.addClass("clear");
   rainbow.append(clear);
   clear.text("clear");
+  clear.click(function() {
+    $('.square').css("background-color", "#fff");
+  });
 
   $("#controls").append(rainbow);
 

@@ -103,7 +103,7 @@ div.square{
 
 /*controls grid*/
 div.rainbow{
-  background-color: red;
+  /*background-color: red;*/
   width: 100px;
   display: inline-block;
   padding: 25px;
@@ -126,7 +126,7 @@ div.block{
 }
 
 div.erase{
-  background-color: yellow;
+  /*background-color: yellow;*/
   width: 75px;
   height: 30px;
   font-size: 25px;
@@ -134,14 +134,16 @@ div.erase{
   border: 2px solid black;
   margin-top: 15px;
   margin-bottom: 15px;
+  font-weight: bold;
 }
 
 div.clear{
-  background-color: orange;
+  /*background-color: orange;*/
   width: 75px;
   height: 30px;
   font-size: 25px;
   text-align: center;
   border: 2px solid black;
+  font-weight: bold;
 }
 
