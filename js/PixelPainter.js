@@ -2,19 +2,9 @@
 //create grids 10 x 10
 
 $(document).ready(function(){
-  console.log("ready!");  
-  $('body').append("<div class='colorPalette red'>content</div>");
-  $('body').append("<div class='colorPalette green'>content</div>");
-  $('body').append("<div class='colorPalette blue'>content</div>");
-  $('body').append("<div class='colorPalette purple'>content</div>");
-  $('body').append("<div class='colorPalette pink'>content</div>");
-  $('body').append("<div class='colorPalette yellow'>content</div>");
-  $('body').append("<div class='colorPalette orange'>content</div>");
-  $('body').append("<div class='colorPalette brown'>content</div>");
-  $('body').append("<div class='colorPalette gray'>content</div>");
-  $('body').append("<div class='colorPalette black'>content</div>");
+  console.log("ready!"); 
+  var colors = ["red", "green", "blue", "purple", "pink", "yellow", "orange", "brown", "gray", "black", "LimeGreen", "Maroon", "MediumOrchid", "MediumSeaGreen", "PaleVioletRed", "PowderBlue"];
   $('body').append("<hr></hr>");
-
 
   var color = null;
 
@@ -47,6 +37,7 @@ $(document).ready(function(){
   //controls grid
   var rainbow = $("<div>");
   rainbow.addClass("rainbow");
+  var i = 0;
 
   for(var k = 0; k < 4; k++) {
     var row = $("<div>");
@@ -54,6 +45,8 @@ $(document).ready(function(){
     for(var l = 0; l < 4; l++) {
       var block = $("<div>");
       block.addClass("block");
+      block.addClass("colorPalette");
+      block.addClass(colors[i++]);
       row.append(block);
     }//end of l
     rainbow.append(row);

@@ -38,16 +38,39 @@
   background-color: #000000;
 }
 
+.LimeGreen {
+  background-color: #32cd32;
+}
+
+.Maroon {
+  background-color: #800000;
+}
+
+.MediumOrchid {
+  background-color: #ba55d3;
+}
+
+.MediumSeaGreen {
+  background-color: #3cb371;
+}
+
+.PaleVioletRed {
+  background-color: #eee8aa;
+}
+
+.PowderBlue {
+  background-color: #b0e036;
+}
 div#controls{
   display: inline-block;
-  background-color: red;
+  /*background-color: red;*/
   height: 325px;
   width: 125px;
 }
 
 div#artboard {
   display: inline-block;
-  background-color: blue;
+  /*background-color: blue;*/
 }
 /*artboard grid*/
 div.grid{
@@ -101,5 +124,4 @@ div.block{
   display: inline-block;
   margin: 0;
 }
-
 
