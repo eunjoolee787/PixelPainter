@@ -8,6 +8,7 @@ $(document).ready(function(){
   $("p:eq(1)").removeClass();
   var color = null;
 
+
   $('body').on("click", '.colorPalette', function() {
     color = $(this).css("background-color");
     console.log(color);
@@ -55,6 +56,16 @@ $(document).ready(function(){
   var erase = $("<div>");
   erase.addClass("erase");
   rainbow.append(erase);
+  erase.text("erase");
+  erase.click(function() {
+    color = "#fff";
+  });
+
+
+  var clear = $("<div>");
+  clear.addClass("clear");
+  rainbow.append(clear);
+  clear.text("clear");
 
   $("#controls").append(rainbow);
 
