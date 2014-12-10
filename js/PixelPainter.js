@@ -4,8 +4,8 @@
 $(document).ready(function(){
   console.log("ready!"); 
   var colors = ["red", "green", "blue", "purple", "pink", "yellow", "orange", "brown", "gray", "black", "LimeGreen", "Maroon", "MediumOrchid", "MediumSeaGreen", "PaleVioletRed", "PowderBlue"];
-  $('body').append("<hr></hr>");
-
+  // $('body').append("<hr></hr>");
+  $("p:eq(1)").removeClass();
   var color = null;
 
   $('body').on("click", '.colorPalette', function() {
@@ -52,8 +52,11 @@ $(document).ready(function(){
     rainbow.append(row);
   }//end of k
 
-  $("#controls").append(rainbow);
+  var erase = $("<div>");
+  erase.addClass("erase");
+  rainbow.append(erase);
 
+  $("#controls").append(rainbow);
 
 // var pixelPainter = PixelPainter(20,20);
 // $("#controls").append(pixelPainter.controls);
